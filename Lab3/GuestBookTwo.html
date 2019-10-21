@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>Guest Book</title>
+     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+    <h2>Enter your name and email address to sign in to our guest book</h2>
+			
+    <form method="POST" action="SignGuestBookTwo.php">
+        <p>Add New Guest</p>
+        <p>Name <input type="text" name="guestname" /></p>
+        <p>Email <input type="text" name="email" /></p>
+        <p><input type="submit" value="submit" /></p>
+    </form>
+    <p>
+        <a href="SignGuestBookTwo.php?action=Sort%20Ascending">Sort Guest List</a><br />
+        <a href="SignGuestBookTwo.php?action=Remove%20Duplicates">Remove Duplicates Information</a><br />
+        <a href="ShowGuestBookTwo.php">Show Guest Book</a>
+    </p>
+</body>
+</html>
