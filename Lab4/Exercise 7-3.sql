@@ -1,0 +1,10 @@
+SELECT team, HR FROM teamstats
+ORDER BY HR DESC LIMIT 10
+INTO OUTFILE 'hrleaders.txt'
+FIELDS TERMINATED BY '\t'
+LINES TERMINATED BY'\n';
+CREATE TABLE hrleaders (Team VARCHAR(50), HR INT);
+LOAD DATA INFILE 'hrleaders.txt'
+INTO TABLE hrleaders;
+SELECT * FROM hrleaders;
+SHOW TABLES;

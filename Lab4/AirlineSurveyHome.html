@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+</head>
+<style type="text/css">
+    .RatingsAnswers
+    {
+        padding: 20px 0 20px 20px;
+        font-size: 16px;
+    }
+    .FlightTimeDate
+    {
+        padding: 20px 0 20px 20px;
+        font-size: 16px;
+    }
+    .FlightInfo
+    {
+        padding: 20px 0 20px 20px;
+        font-size: 16px;
+    }
+</style>
+<body>
+    <h1>Airline Survey</h1>
+    <form method="POST" action="AirlineSurveySubmit.php">
+        <h2>Please fill in all fields</h2>
+        <div class="FlightTimeDate">
+            <label for="DateTimeFlight"><input type="date" name="flightDate" /> Select the date of the flight</label><br /><br />
+            <label for="DateTimeFlight"><input type="time" name="flightTime" /> Select the time the flight left the (first) airport</label>
+        </div>
+        <div class="FlightInfo">
+            <label for="FlightNumber"><input type="text" name="flightNumber" /> Enter the Flight Number</label><br /><br />
+            <label for="AirlineName"><input type="text" name="airlineName" /> Enter the name of the airline operating the flight</label>
+        </div>
+        <div class="RatingsAnswers">
+            <h3>How Would You Rate the Following:</h3>
+            <h4>The Friendliness of Customer Staff:</h4>
+                <label for="FriendlyExcel"><input type="radio" name="friendliness" id="FriendlyExcel" value="excel" /> Excellent</label><br />
+                <label for="FriendlyGood"><input type="radio" name="friendliness" id="FriendlyGood" value="good" /> Good</label><br />
+                <label for="FriendlyFair"><input type="radio" name="friendliness" id="FriendlyFair" value="fair" /> Fair</label><br />
+                <label for="FriendlyPoor"><input type="radio" name="friendliness" id="FriendlyPoor" value="poor" /> Poor</label><br />
+                <label for="FriendlyNoOpin"><input type="radio" name="friendliness" id="FriendlyNoOpin" value="noOpin" /> No Opinion</label>
+        </div>
+        <div class="RatingsAnswers">
+            <h4>Space for Luggage Storage:</h4>
+            <div class="answerInputs">
+                <label for="SpaceExcel"><input type="radio" name="luggage_space" id="SpaceExcel" value="excel" /> Excellent</label><br />
+                <label for="SpaceGood"><input type="radio" name="luggage_space" id="SpaceGood" value="good" /> Good</label><br />
+                <label for="SpaceFair"><input type="radio" name="luggage_space" id="SpaceFair" value="fair" /> Fair</label><br />
+                <label for="SpacePoor"><input type="radio" name="luggage_space" id="SpacePoor" value="poor" /> Poor</label><br />
+                <label for="SpaceNoOpin"><input type="radio" name="luggage_space" id="SpaceNoOpin" value="noOpin" /> No Opinion</label>
+            </div>
+        </div>
+        <div class="RatingsAnswers">
+            <h4>Comfort of Seating:</h4>
+            <div class="answerInputs">
+                <label for="ComfortExcel"><input type="radio" name="comfort" id="ComfortExcel" value="excel" /> Excellent</label><br />
+                <label for="ComfortGood"><input type="radio" name="comfort" id="ComfortGood" value="good" /> Good</label><br />
+                <label for="ComfortFair"><input type="radio" name="comfort" id="ComfortFair" value="fair" /> Fair</label><br />
+                <label for="ComfortPoor"><input type="radio" name="comfort" id="ComfortPoor" value="poor" /> Poor</label><br />
+                <label for="ComfortNoOpin"><input type="radio" name="comfort" id="ComfortNoOpin" value="noOpin" /> No Opinion</label>
+            </div>
+        </div>
+        <div class="RatingsAnswers">
+            <h4>Cleanliness of Aircraft:</h4>
+            <div class="answerInputs">
+                <label for="CleanExcel"><input type="radio" name="clean" id="CleanExcel" value="excel" /> Excellent</label><br />
+                <label for="CleanGood"><input type="radio" name="clean" id="CleanGood" value="good" /> Good</label><br />
+                <label for="CleanFair"><input type="radio" name="clean" id="CleanFair" value="fair" /> Fair</label><br />
+                <label for="CleanPoor"><input type="radio" name="clean" id="CleanPoor" value="poor" /> Poor</label><br />
+                <label for="CleanNoOpin"><input type="radio" name="clean" id="CleanNoOpin" value="noOpin" /> No Opinion</label>
+            </div>
+        </div>
+        <div class="RatingsAnswers">
+            <h4>Noise Level of Aircraft:</h4>
+            <div class="answerInputs">
+                <label for="NoiseExcel"><input type="radio" name="noise_level" id="NoiseExcel" value="excel" /> Excellent</label><br />
+                <label for="NoiseGood"><input type="radio" name="noise_level" id="NoiseGood" value="good" /> Good</label><br />
+                <label for="NoiseFair"><input type="radio" name="noise_level" id="NoiseFair" value="fair" /> Fair</label><br />
+                <label for="NoisePoor"><input type="radio" name="noise_level" id="NoisePoor" value="poor" /> Poor</label><br />
+                <label for="NoiseNoOpin"><input type="radio" name="noise_level" id="NoiseNoOpin" value="noOpin" /> No Opinion</label>
+            </div>
+        </div>
+        <br /><input type="reset" name="resetForm" value="Clear" />
+		<input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>
